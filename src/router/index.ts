@@ -21,12 +21,14 @@ import { routesMarketplace } from "./marketplace";
 import { routesAlarm } from "./alarm";
 import routesLayers from "./layer";
 import { routesSettings } from "./settings";
+import { routesArthas } from "./arthas";
 
 const routes: RouteRecordRaw[] = [
   ...routesMarketplace,
   ...routesLayers,
   ...routesAlarm,
   ...routesDashboard,
+  ...routesArthas,
   ...routesSettings,
 ];
 

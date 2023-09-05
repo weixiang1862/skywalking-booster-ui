@@ -72,6 +72,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       host: true,
       port: 3000,
       proxy: {
+        "/arthas": {
+          target: `${VITE_SW_PROXY_TARGET || "http://127.0.0.1:12800"}`,
+          changeOrigin: true,
+        },
         "/graphql": {
           target: `${VITE_SW_PROXY_TARGET || "http://127.0.0.1:12800"}`,
           changeOrigin: true,
